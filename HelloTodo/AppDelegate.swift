@@ -14,6 +14,7 @@
 import UIKit
 import BMSCore
 import BMSSecurity
+import BMSAnalyticsAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

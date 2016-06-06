@@ -13,11 +13,10 @@
 
 import Foundation
 import BMSCore
-import BMSAnalyticsSpec
 import SwiftyJSON
 
 class TodoFacade{
-	private static let logger = Logger.loggerForName("TodoFacade")
+	private static let logger = Logger.logger(forName: "TodoFacade")
 	
 	static func getItems(completionHandler:([TodoItem]?, error:NSError?) -> Void){
 		logger.debug("getItems");

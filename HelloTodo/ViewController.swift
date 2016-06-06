@@ -13,12 +13,12 @@
 
 import UIKit
 import BMSCore
-import BMSAnalyticsSpec
+import BMSAnalyticsAPI
 import SwiftSpinner
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
-	let logger = Logger.loggerForName("ViewController")
+	let logger = Logger.logger(forName: "asd")
 	
 	@IBOutlet
 	var tableView: UITableView!

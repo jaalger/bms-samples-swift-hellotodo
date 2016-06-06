@@ -107,12 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A2E60E41CABE51C00DEA750 /* Build configuration list for PBXNativeTarget "HelloTodo" */;
 			buildPhases = (
-				36FAB8913D92D794632CD224 /* Check Pods Manifest.lock */,
+				36FAB8913D92D794632CD224 /* [CP] Check Pods Manifest.lock */,
 				3A2E60CE1CABE51C00DEA750 /* Sources */,
 				3A2E60CF1CABE51C00DEA750 /* Frameworks */,
 				3A2E60D01CABE51C00DEA750 /* Resources */,
-				BFA480F2926D90A316C552BA /* Embed Pods Frameworks */,
-				CAA39956F17F69FE219FEDD1 /* Copy Pods Resources */,
+				BFA480F2926D90A316C552BA /* [CP] Embed Pods Frameworks */,
+				CAA39956F17F69FE219FEDD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,14 +171,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36FAB8913D92D794632CD224 /* Check Pods Manifest.lock */ = {
+		36FAB8913D92D794632CD224 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,14 +186,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BFA480F2926D90A316C552BA /* Embed Pods Frameworks */ = {
+		BFA480F2926D90A316C552BA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +201,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloTodo/Pods-HelloTodo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CAA39956F17F69FE219FEDD1 /* Copy Pods Resources */ = {
+		CAA39956F17F69FE219FEDD1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
