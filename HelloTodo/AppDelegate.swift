@@ -25,11 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	let appRegion = BMSClient.REGION_US_SOUTH
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		BMSClient.sharedInstance
-			.initializeWithBluemixAppRoute(appRoute,
-			                               bluemixAppGUID: appGUID,
-			                               bluemixRegion: appRegion)
 		
+		let myBMSClient = BMSClient.sharedInstance
+            	myBMSClient.initialize(bluemixAppRoute: appRoute, bluemixAppGUID: appGUID, bluemixRegion: appRegion)
+            	myBMSClient.defaultRequestTimeout = 10.0  // minutes
 		BMSClient.sharedInstance.authorizationManager = MCAAuthorizationManager.sharedInstance
 		return true
 	}
